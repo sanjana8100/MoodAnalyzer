@@ -24,7 +24,7 @@ public class MoodAnalyzerTest {
     }
 
     @Test
-    public void testNullException() throws MoodAnalysisException {
+    public void testNullException(){
         mood = new MoodAnalyzer();
         try {
             ExpectedException exceptionRule = ExpectedException.none();
@@ -36,7 +36,7 @@ public class MoodAnalyzerTest {
     }
 
     @Test
-    public void testEmptyException() throws MoodAnalysisException{
+    public void testEmptyException(){
         mood = new MoodAnalyzer();
         try {
             ExpectedException exceptionRule = ExpectedException.none();
