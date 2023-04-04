@@ -25,7 +25,7 @@ public class MoodAnalyzerTest {
 
     @Test
     public void testNullException(){
-        mood = new MoodAnalyzer();
+        mood = new MoodAnalyzer(null);
         try {
             ExpectedException exceptionRule = ExpectedException.none();
             exceptionRule.expect(MoodAnalysisException.class);
